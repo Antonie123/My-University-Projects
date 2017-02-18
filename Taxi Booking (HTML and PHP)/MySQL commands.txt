@@ -1,0 +1,12 @@
+CREATE TABLE `assign2` (
+	`bookingNumber` INT(11) NOT NULL AUTO_INCREMENT,
+	`customerName` VARCHAR(50) NOT NULL,
+	`contactPhone` INT(11) NOT NULL,
+	`pickupAddress` VARCHAR(50) NOT NULL,
+	`destinationSuburb` VARCHAR(50) NOT NULL,
+	`pickupDateTime` DATETIME NOT NULL,
+	`status` VARCHAR(50) NOT NULL DEFAULT 'unassigned',
+	PRIMARY KEY (`bookingNumber`)
+)
+COLLATE='latin1_swedish_ci'
+ENGINE=InnoDB;

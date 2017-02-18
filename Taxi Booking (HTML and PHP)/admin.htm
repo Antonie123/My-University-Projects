@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--
+Created by Antonie Chau
+AUT ID: 1305095
+Admin page that an 'admin' uses to view booking requests and assign taxis.
+-->
+<html>
+	<head>
+		<title>CabsOnline - Administration</title>
+		<script type="text/javascript" src="admin.js"></script>
+	</head>
+	
+	<body>
+	<center><h1>CabsOnline - Administration</h1></center>
+	<form>
+		<center>
+			<table border="1">
+				<tr>
+				<td>Show Unassigned Booking Requests</td>
+				<td><input type="button" value="Show pick-up Requests" onClick="showRequests()" style="width: 175px"></td>
+				</tr><tr>						
+				<td><input type="text" placeholder="Booking Number i.e. 67" name="assignTaxi"></td>
+				<td><input type="button" value="Assign A Taxi" style="width: 175px" onClick="checkBookingNumber(assignTaxi.value)"></td>
+				</tr>
+			</table>
+		</center>
+	</form>
+		<center><p>
+		<div id="divMessage">
+			<p>To start, click 'Show pick-up Requests' for unassigned bookings.</p>
+		</div>
+		</center>
+	</body>
+</html>

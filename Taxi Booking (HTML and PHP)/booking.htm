@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+Created by Antonie Chau
+AUT ID: 1305095
+This is the page the 'client' interacts with to book a taxi.
+-->
+<html>
+	<head>
+		<title>CabsOnline - Booking</title>
+		<script type="text/javascript" src="booking.js"></script>
+	</head>
+	
+	<body>
+	<form>
+		<center>
+			<table>
+				<tr><h1>CabsOnline - Booking</h1></tr>
+				<tr>
+				<td>Customer Name:</td>
+				<td><input type="text" name="fName" placeholder="First Name"></td>
+				<td><input type="text" name="lName" placeholder="Last Name"></td>
+				</tr><tr>
+				<td>Contact Number:</td>
+				<td><input type="text" name="cNumber" placeholder="1234567"></td>
+				</tr>
+				<tr><td colspan="3"><center>-</center></td></tr>
+				<tr>
+				<td>Pick-up Address:</td>
+				<td><input type="text" name="aUnit" placeholder="Unit Letter (i.e. 'B')"></td>
+				<td><input type="text" name="aNumber" placeholder="Unit Number (i.e '123')"></td>
+				</tr><tr>
+				<td></td>
+				<td><input type="text" name="aName" placeholder="Street Name"></td>
+				<td><input type="text" name="aSuburb" placeholder="Suburb"></td>
+				</tr>
+				<tr><td colspan="3"><center>-</center></td></tr>
+				<tr>
+				<td>Destination Suburb:</td>
+				<td><input type="text" name="dSuburb" placeholder="Suburb"></td>
+				</tr><tr>
+				<td>Pick-up Date/Time:</td>
+				<td><input type="date" name="pickupDate" placeholder="2016-01-01"></td>
+				<td><input type="time" name="pickupTime" placeholder="00:00:00"></td>
+				</tr>
+				<tr><td height="20"></td></tr>
+				<tr>
+				<td></td>
+				<td><center><input type="button" value="POST" onClick="checkBooking(
+					fName.value, lName.value, cNumber.value, aUnit.value, aNumber.value, 
+					aName.value, aSuburb.value, dSuburb.value, pickupDate.value, pickupTime.value)"></center></td>
+				<td><center><input type="reset" value="RESET" onclick="window.location=''"></center></td>
+			</table>
+		</center>
+	</form>	
+		<center><p>
+		<div id="divMessage">			
+		</div>
+		</center>
+	</body>
+</html>
