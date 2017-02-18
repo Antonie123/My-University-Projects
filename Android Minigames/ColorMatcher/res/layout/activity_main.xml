@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.example.hellowworld.MainActivity" >    
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/score"
+        android:textSize="@dimen/abc_action_bar_default_height" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/highscore" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="362dp"
+        android:layout_height="73dp"
+        android:gravity="center"
+        android:text="@string/black"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="@dimen/abc_action_bar_default_height" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:text="@string/instruct"
+        android:textSize="@dimen/abc_action_bar_title_text_size" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="175dp"
+        android:layout_height="76dp"
+        android:background="@color/Red"
+        android:onClick="checkAnswerRed" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="175dp"
+        android:layout_height="76dp"
+        android:background="@color/Green" 
+        android:onClick="checkAnswerGreen"
+        />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="174dp"
+        android:layout_height="76dp"
+        android:background="@color/Blue" 
+        android:onClick="checkAnswerBlue"
+        />    
+
+    <Button
+        android:id="@+id/button4"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        android:onClick="resetGame" />
+
+</LinearLayout>
